@@ -25,9 +25,9 @@
 	           '(min-width  . 1)
                '(width      . 81)
                '(vertical-scroll-bars . nil)
-               '(internal-border-width . 24)
-               '(left-fringe    . 1)
-               '(right-fringe   . 1)
+               '(internal-border-width . 10)
+               '(left-fringe    . 5)
+               '(right-fringe   . 5)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
 
@@ -58,15 +58,15 @@
       inhibit-startup-message t
       inhibit-startup-echo-area-message t
       initial-scratch-message nil)
-(if (fboundp 'tool-bar-mode) (tool-bar-mode nil))
-(tooltip-mode 0)
-(scroll-bar-mode nil)
-(menu-bar-mode 0)
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(tooltip-mode -1)
+(scroll-bar-mode -1)
+(menu-bar-mode -1)
 ;; (global-hl-line-mode 1)
 (setq x-underline-at-descent-line t)
 
 ;; Vertical window divider
-(setq window-divider-default-right-width 24)
+(setq window-divider-default-right-width 5)
 (setq window-divider-default-places 'right-only)
 (window-divider-mode 1)
 

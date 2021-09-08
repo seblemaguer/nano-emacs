@@ -88,15 +88,13 @@
   (global-set-key (kbd "<mouse-5>") 'scroll-up-line))
 
 ;; No scroll bars
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode nil))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; No toolbar
-(if (fboundp 'tool-bar-mode) (tool-bar-mode nil))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 
 ;; No menu bar
-(if (display-graphic-p)
-    (menu-bar-mode t) ;; When nil, focus problem on OSX
-  (menu-bar-mode -1))
+(menu-bar-mode -1)
 
 ;; Navigate windows using shift+direction
 (windmove-default-keybindings)
