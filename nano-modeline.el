@@ -87,7 +87,8 @@
 	        (propertize (make-string available-width ?\ )
                         'face 'nano-face-header-default)
 	        (propertize right 'face `(:inherit nano-face-header-default
-                                               :foreground ,nano-color-faded)))))
+                                               ;; :foreground ,nano-color-faded
+                                               )))))
 
 ;; ---------------------------------------------------------------------
 (with-eval-after-load 'mu4e

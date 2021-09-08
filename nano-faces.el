@@ -197,10 +197,10 @@ background color that is barely perceptible."
                       :foreground nano-color-popout)
 
   (set-face-attribute 'nano-face-variable-pitch nil
-                          :foreground (face-foreground 'nano-face-default)
-                          :background (face-background 'nano-face-default)
-                          :family nano-font-family-proportional
-                          :height (* nano-font-size 10))
+                      :foreground (face-foreground 'nano-face-default)
+                      :background (face-background 'nano-face-default)
+                      :family nano-font-family-proportional
+                      :height (* nano-font-size 10))
   (if (display-graphic-p)
       (set-face-attribute 'nano-face-strong nil
                           :foreground (face-foreground 'nano-face-default)
@@ -222,9 +222,8 @@ background color that is barely perceptible."
 
   (set-face-attribute 'nano-face-header-default nil
                       :foreground nano-color-foreground
-                      :background nano-color-subtle
+                      :background "#dce0e1"
                       :box `(:line-width 1
-                                         :color ,nano-color-background
                                          :style nil))
 
   (set-face-attribute 'nano-face-tag-default nil
@@ -234,17 +233,16 @@ background color that is barely perceptible."
                       :height (if (display-graphic-p)
                                   (round
                                    (* 0.85 (* 10 nano-font-size)))
-                                                1)
+                                1)
                       :box `(:line-width 1
                                          :color ,nano-color-foreground
                                          :style nil))
 
   (set-face-attribute 'nano-face-header-strong nil
                       :foreground nano-color-strong
-                      :background nano-color-subtle
+                      :background "#dce0e1"
                       :inherit 'nano-face-strong
                       :box `(:line-width 1
-                                         :color ,nano-color-background
                                          :style nil))
 
   (set-face-attribute 'nano-face-tag-strong nil
@@ -254,7 +252,7 @@ background color that is barely perceptible."
                       :height (if (display-graphic-p)
                                   (round
                                    (* 0.85 (* 10 nano-font-size)))
-                                                1)
+                                1)
                       :box `(:line-width 1
                                          :color ,nano-color-strong
                                          :style nil))
@@ -263,7 +261,6 @@ background color that is barely perceptible."
                       :foreground nano-color-background
                       :background nano-color-salient
                       :box `(:line-width 1
-                                         :color ,nano-color-background
                                          :style nil))
 
   (set-face-attribute 'nano-face-tag-salient nil
@@ -273,7 +270,7 @@ background color that is barely perceptible."
                       :height (if (display-graphic-p)
                                   (round
                                    (* 0.85 (* 10 nano-font-size)))
-                                                1)
+                                1)
                       :box `(:line-width 1
                                          :color ,nano-color-salient
                                          :style nil))
@@ -282,7 +279,7 @@ background color that is barely perceptible."
                       :foreground nano-color-background
                       :background nano-color-popout
                       :box `(:line-width 1
-                                         :color ,nano-color-background
+                                         :color "#000000"
                                          :style nil))
 
   (set-face-attribute 'nano-face-tag-popout nil
@@ -292,7 +289,7 @@ background color that is barely perceptible."
                       :height (if (display-graphic-p)
                                   (round
                                    (* 0.85 (* 10 nano-font-size)))
-                                                1)
+                                1)
                       :box `(:line-width 1
                                          :color ,nano-color-popout
                                          :style nil))
@@ -301,7 +298,7 @@ background color that is barely perceptible."
                       :foreground nano-color-background
                       :background nano-color-faded
                       :box `(:line-width 1
-                                         :color ,nano-color-background
+                                         :color "#000000"
                                          :style nil))
 
   (set-face-attribute 'nano-face-tag-faded nil
@@ -311,7 +308,7 @@ background color that is barely perceptible."
                       :height (if (display-graphic-p)
                                   (round
                                    (* 0.85 (* 10 nano-font-size)))
-                                                1)
+                                1)
                       :box `(:line-width 1
                                          :color ,nano-color-faded
                                          :style nil))
@@ -322,7 +319,7 @@ background color that is barely perceptible."
                       :foreground nano-color-background
                       :background nano-color-critical
                       :box `(:line-width 1
-                                         :color ,nano-color-background
+                                         :color "#000000"
                                          :style nil))
   (set-face-attribute 'nano-face-tag-critical nil
                       :foreground nano-color-background
@@ -331,7 +328,7 @@ background color that is barely perceptible."
                       :height (if (display-graphic-p)
                                   (round
                                    (* 0.85 (* 10 nano-font-size)))
-                                                1)
+                                1)
                       :box `(:line-width 1
                                          :color ,nano-color-critical
                                          :style nil))
