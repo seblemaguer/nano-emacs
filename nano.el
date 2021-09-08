@@ -56,8 +56,8 @@
 (require 'nano-faces)
 (nano-faces)
 
-(require 'nano-theme)
-(nano-theme)
+;; (require 'nano-theme)
+;; (nano-theme)
 
 ;; Nano default settings (optional)
 (require 'nano-defaults)
@@ -68,13 +68,13 @@
 ;; Nano header & mode lines (optional)
 (require 'nano-modeline)
 
-;; Nano key bindings modification (optional)
-(require 'nano-bindings)
+;; ;; Nano key bindings modification (optional)
+;; (require 'nano-bindings)
 
 ;; Compact layout (need to be loaded after nano-modeline)
 (when (member "-compact" command-line-args)
   (require 'nano-compact))
-  
+
 ;; Nano counsel configuration (optional)
 ;; Needs "counsel" package to be installed (M-x: package-install)
 ;; (require 'nano-counsel)
