@@ -27,8 +27,8 @@
                '(width      . 81)
                '(vertical-scroll-bars . nil)
                '(internal-border-width . 10)
-               '(left-fringe    . 5)
-               '(right-fringe   . 5)
+               '(left-fringe    . 15)
+               '(right-fringe   . 15)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
 
